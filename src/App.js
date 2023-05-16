@@ -8,7 +8,7 @@ import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/goit-react-hw-08-phonebook">
+    <BrowserRouter basename="/goit-react-hw-07-phonebook">
       <NavBar />
       <Routes>
         <Route path="/" element={<HomePage />} />
