@@ -9,6 +9,7 @@ import {
 } from "@firebase/firestore";
 import { auth } from "../../firebase";
 
+
 export const addContact = (contact) => async (dispatch) => {
   try {
     const docRef = await addDoc(collection(db, "contacts"), contact);
@@ -51,3 +52,5 @@ export const fetchContacts = () => async (dispatch) => {
     console.error("Error fetching contacts: ", error);
   }
 };
+
+export const selectContacts = state => state.contacts.items;
